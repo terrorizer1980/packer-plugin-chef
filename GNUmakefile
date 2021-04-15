@@ -1,4 +1,4 @@
-NAME=scaffolding
+NAME=chef
 BINARY=packer-plugin-${NAME}
 
 COUNT?=1
