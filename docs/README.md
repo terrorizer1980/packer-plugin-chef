@@ -56,5 +56,5 @@ on [installing a plugin](https://www.packer.io/docs/extending/plugins/#installin
 
 ### Provisioners
 
-- [chef-client](/docs/provisioners/chef-client.mdx) - The chef-client provisioner installs and configures software on machines built by Packer using chef-client.
-- [chef-solo](/docs/provisioners/chef-solo.mdx) - The chef-solo provisioner installs and configures software on machines built by Packer using chef-solo.
+- [chef-client](/provisioners/chef-client.mdx) - The chef-client provisioner installs and configures software on machines built by Packer using chef-client.
+- [chef-solo](/provisioners/chef-solo.mdx) - The chef-solo provisioner installs and configures software on machines built by Packer using chef-solo.
