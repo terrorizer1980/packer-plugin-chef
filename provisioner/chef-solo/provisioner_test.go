@@ -14,8 +14,7 @@ func testConfig() map[string]interface{} {
 }
 
 func TestProvisioner_Impl(t *testing.T) {
-	var raw interface{}
-	raw = &Provisioner{}
+	var raw interface{} = &Provisioner{}
 	if _, ok := raw.(packersdk.Provisioner); !ok {
 		t.Fatalf("must be a Provisioner")
 	}
@@ -365,7 +364,7 @@ func TestProvisionerPrepare_jsonstring(t *testing.T) {
 			},
 			"bar": {
 				"bar": "baz"
-			},	
+			},
 			"bFalse": false,
 			"bTrue": true,
 			"bStr": "bar",
