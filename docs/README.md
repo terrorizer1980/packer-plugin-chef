@@ -1,4 +1,4 @@
-# Scaffolding Plugins
+# Chef Plugins
 
 <!--
   Include a short overview about the plugin.
@@ -27,7 +27,7 @@ packer {
   required_plugins {
     name = {
       version = ">= 0.0.1"
-      source  = "github.com/hashicorp/name"
+      source  = "github.com/hashicorp/chef"
     }
   }
 }
@@ -54,25 +54,7 @@ on [installing a plugin](https://www.packer.io/docs/extending/plugins/#installin
 
 ## Plugin Contents
 
-The Scaffolding plugin is intended as a starting point for creating Packer plugins, containing:
-
-### Builders
-
-- [builder](/docs/builders/builder-name.mdx) - The scaffolding builder is used to create endless Packer
-  plugins using a consistent plugin structure.
-
 ### Provisioners
 
-- [provisioner](/docs/provisioners/provisioner-name.mdx) - The scaffolding provisioner is used to provisioner
-  Packer builds.
-
-### Post-processors
-
-- [post-processor](/docs/post-processors/postprocessor-name.mdx) - The scaffolding post-processor is used to
-  export scaffolding builds.
-
-### Data Sources
-
-- [data source](/docs/datasources/datasource-name.mdx) - The scaffolding data source is used to
-  export scaffolding data.
-
+- [chef-client](/provisioners/chef-client.mdx) - The chef-client provisioner installs and configures software on machines built by Packer using chef-client.
+- [chef-solo](/provisioners/chef-solo.mdx) - The chef-solo provisioner installs and configures software on machines built by Packer using chef-solo.
