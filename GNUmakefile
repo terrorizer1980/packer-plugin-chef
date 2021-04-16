@@ -23,7 +23,8 @@ ci-release-docs:
 		@/bin/sh -c "[ -d docs ] && zip -r docs.zip docs/"
 
 run-example: dev
-	@packer build ./example
+	@packer init ./example
+	@packer build -var 'cookbook_paths=example/cookbooks' ./example
 
 test:
 	@go test -count $(COUNT) $(TEST) -timeout=3m
