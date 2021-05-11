@@ -1,5 +1,3 @@
-## 0.0.3 (Unreleased)
-
 ## 0.0.2 (May 11, 2021)
 
 * Fix registration bug that externally caused plugin not to load properly [GH-25]
