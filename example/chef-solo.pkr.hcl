@@ -5,6 +5,10 @@ packer {
       source  = "github.com/hashicorp/docker"
       version = ">=0.0.7"
     }
+    chef = {
+      source  = "github.com/hashicorp/chef"
+      version = ">=0.0.2"
+    }
   }
 }
 
