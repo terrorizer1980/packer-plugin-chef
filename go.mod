@@ -7,3 +7,5 @@ require (
 	github.com/hashicorp/packer-plugin-sdk v0.2.3
 	github.com/zclconf/go-cty v1.8.3
 )
+
+// Incorrect plugin registration for chef provisioners; see hashicorp/packer-plugin-chef/pull/25
