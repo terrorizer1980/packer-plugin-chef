@@ -9,3 +9,4 @@ require (
 )
 
 // Incorrect plugin registration for chef provisioners; see hashicorp/packer-plugin-chef/pull/25
+retract v0.0.1
